@@ -122,8 +122,6 @@ void loop() {
   reg_array[2]  = raw_current >> 4;
   reg_array[3]  = raw_current & 0x0F;   //why!!!! //I2C Master doesnt seem to like top bit of data set so jiggle it around here to prevent it
 
-
- 
   Serial.print("raw_v=");
   Serial.print(raw_voltage);
   Serial.print("\t\traw_i=");
@@ -139,7 +137,4 @@ void loop() {
   Serial.println("");
 
   delay(1000);
-
-
 }
-
